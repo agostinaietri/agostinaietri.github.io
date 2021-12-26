@@ -110,14 +110,15 @@
             <div class="floppy-drive"></div>
         </div>
         <div class="detail-column">
-            <div class="power-button"></div>
+            <div class="power-button"><img src="power-button.png" style="width:8%; padding-top:10px; padding-left:750px;"></div>
         </div>
     </div>
     
     <style>
         
         body {
-            background-color: rgb(241, 250, 177);
+            background-image: url("texture.jpg");
+            background-repeat: repeat;
         }
 
         .screen {
@@ -264,7 +265,7 @@
             border-radius: 10%;
             display: block;
         }
-
+/*
         .power-button {
             margin-left:725px;
             margin-top:15px;
@@ -272,7 +273,7 @@
             width:80px;
             background-color:red;
         }
-
+*/
         .detail-row {
             display: flex;
         }
@@ -471,7 +472,7 @@
             }
         }
 
-        .crt::after:not(body) {
+        .crt::after {
             content: " ";
             display: block;
             position: absolute;
@@ -486,7 +487,7 @@
             animation: flicker 0.15s infinite;
         }
 
-        .crt::before:not(body) {
+        .crt::before:not(body)  {
             content: " ";
             display: block;
             position: absolute;
@@ -500,7 +501,7 @@
             pointer-events: none;
         }
 
-        .crt:not(body) {
+        .crt:not(body)  {
             animation: textShadow 1.6s infinite;
         }
 
